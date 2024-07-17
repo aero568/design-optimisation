@@ -68,5 +68,5 @@ print(x2_opt)
 
 # plot location of the minimum over contour
 set_plot()
-plt.plot(x1_opt, x2_opt, "ro")
+plt.plot(x1_opt, x2_opt, "rd")
 plt.show()
