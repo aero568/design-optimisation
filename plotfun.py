@@ -21,9 +21,9 @@ def set_plot(f, xlim=[-5, 5], ylim=[-4, 8]):
     plt.contour(X1, X2, f(X1, X2), levels=levels)
 
     plt.imshow(
-        ((X1**2 + X2**2 <= 1) & ((X1 - 3 * X2 + 0.5) >= 0)).astype(int),
+        ((X1**2 + X2**2 <= 1) & ((X1 - 3 * X2 + 0.5) >= 0) & (X1>=0) & (X2>=0)).astype(int),
         extent=(X1.min(), X1.max(), X2.min(), X2.max()),
         origin="lower",
-        cmap="Greys",
-        alpha=0.3,
+        cmap="Blues",
+        alpha=0.4,
     )
